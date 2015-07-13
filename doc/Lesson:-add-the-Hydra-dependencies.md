@@ -16,9 +16,10 @@ Open up `Gemfile` in your editor.   We're going to add the following lines after
 
 ```ruby
 gem 'hydra'
+gem 'hydra-head'
 ```
 
-This includes the hydra-gem in our application.  Bundler will then ensure that the hydra-head, blacklight, active-fedora and other gems required by hydra get included (required) correctly. This includes a dependency for the jettywrapper gem (installed automatically). The jettywrapper gem is used to install and configure a preconfigured instance of jetty that loads and runs local development instances of Fedora and Solr for you to run and test your application against.
+This includes the hydra and hydra-head gems in our application.  Bundler will then ensure that the blacklight, active-fedora and other gems required by hydra get included (required) correctly. This includes a dependency for the jettywrapper gem (installed automatically). The jettywrapper gem is used to install and configure a preconfigured instance of jetty that loads and runs local development instances of Fedora and Solr for you to run and test your application against.
 
 Now save the change and install the dependencies by running bundler:
 ```text
